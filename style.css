@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins', sans-serif;
+    background-color: aqua;
+    color: white;
+}
+
+.navigation-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 120px;
+}
+
+.navigation-bar h1 {
+    color: white;
+    margin-left: 40px;
+}
+.navbar {
+    margin-right: 40px;
+}
+
+.navbar a {
+    list-style: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: aquamarine;
+    transition: all .3s ease;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.container {
+    position: absolute;
+    width: 360px;
+    height: 280px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    background-color: black;
+    border-radius: 45px;
+}
+
+.btn{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+
+}
+
+input {
+    outline: none;
+    border: none;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+}
+
+span {
+    color: red;
+}
+
+.result {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
